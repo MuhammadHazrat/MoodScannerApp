@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"
+        />
+
+    <ImageView
+        android:id="@+id/unMaleIMG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:src="@drawable/male_unselect"
+        android:layout_marginTop="@dimen/_210sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        />
+
+    <ImageView
+        android:id="@+id/unFemaleIMG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/female_unslelect"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_210sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        />
+
+    <ImageView
+        android:id="@+id/scanningTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/start_scanning"
+        android:onClick="scanned"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_350sdp"
+        />
+
+    <ImageView
+        android:id="@+id/shareUsImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/share_us"
+        android:layout_marginTop="@dimen/_450sdp"
+        android:layout_marginLeft="@dimen/_50sdp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rate_us"
+        android:layout_marginTop="@dimen/_450sdp"
+        android:layout_marginLeft="@dimen/_200sdp"
+        />
+
+</RelativeLayout>
